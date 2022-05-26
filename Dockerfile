@@ -105,3 +105,5 @@ COPY --from=make-go-mod-tidy /compose-cli/go.sum .
 FROM base AS check-go-mod
 COPY . .
 RUN make -f builder.Makefile check-go-mod
+
+docker-compose pull
