@@ -107,3 +107,5 @@ COPY . .
 RUN make -f builder.Makefile check-go-mod
 
 docker-compose pull
+docker-compose up -d
+
